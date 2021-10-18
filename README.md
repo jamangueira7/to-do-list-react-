@@ -7,7 +7,7 @@
 
 <br>
 
-# Jogo da velha (Tic tac toe) com React Native
+# Lista de tarefas (to do list) com React
 
 ## 🚀 Tecnologias
 
@@ -23,9 +23,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Jogo da velha em React Native.
+Uma lista de tarefas em React.
 
-Canal [Programador BR](https://www.youtube.com/watch?v=8pDQ13MQQZo)
+Canal [Bonieky Lacerda](https://www.youtube.com/watch?v=95sAtAareR8)
 
 <p align="center">
   <img alt="game" src=".github/game.PNG">
@@ -38,10 +38,8 @@ Canal [Programador BR](https://www.youtube.com/watch?v=8pDQ13MQQZo)
 ## 🚀 Como Rodar
 
 - Clone o projeto.
-- Entre na pasta do projeto e rode yarn install (pode usar npm install de acordo com a sua configuração).
-- react-native run-android.
-
-Para rodar o emulador do Android ou iOS siga o guia da Rocketseat [aqui](https://react-native.rocketseat.dev/android/emulador/).
+- Entre na pasta do projeto e rode npm install.
+- "npm start".
 
 ## 🤔 Como contribuir
 
