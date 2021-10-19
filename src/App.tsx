@@ -23,6 +23,17 @@ const App = () => {
         setList(newList);
     }
 
+
+    const handleTaskChange = (id: number, done: boolean) => {
+        let newList = [...list];
+        for(let i in newList) {
+            if(newList[i].id === id) {
+                newList[i].done = done;
+            }
+        }
+        setList(newList);
+    }
+
     return(
         <Components.Container>
             <Components.Area>
@@ -31,7 +42,11 @@ const App = () => {
                 <AddArea onEnter={handleAddTask} />
 
                 {list.map((item, index) => (
-                    <ListItem key={index} item={item}/>
+                    <ListItem
+                        key={index}
+                        item={item}
+                        onChange={handleTaskChange}
+                    />
                 ))}
             </Components.Area>
         </Components.Container>
