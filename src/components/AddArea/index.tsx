@@ -1,16 +1,28 @@
-import { useState } from 'react';
+import { useState, KeyboardEvent } from 'react';
 import * as Component from './styles';
-import { Item } from '../../types/Item';
 
+type Props = {
+    onEnter: (taskName: string) => void
+}
 
-export const AddArea = () => {
+export const AddArea = ({ onEnter }: Props) => {
+    const [inputText, setInputText] = useState('');
 
+    const handleKeyUp = (e: KeyboardEvent) => {
+        if(e.code === 'Enter' && inputText !== '') {
+            onEnter(inputText);
+            setInputText('');
+        }
+    }
     return (
         <Component.Container>
             <div className="image">+</div>
             <input
                 type="text"
                 placeholder="Adicionar tarefa"
+                value={inputText}
+                onChange={ e => setInputText(e.target.value)}
+                onKeyUp={handleKeyUp}
             />
         </Component.Container>
     );
