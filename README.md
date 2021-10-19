@@ -28,11 +28,7 @@ Uma lista de tarefas em React.
 Canal [Bonieky Lacerda](https://www.youtube.com/watch?v=95sAtAareR8)
 
 <p align="center">
-  <img alt="game" src=".github/game.PNG">
-</p>
-
-<p align="center">
-  <img alt="game" src=".github/game2.PNG">
+  <img alt="game" src=".github/project.PNG">
 </p>
 
 ## 🚀 Como Rodar
