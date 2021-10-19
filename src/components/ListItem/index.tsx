@@ -8,7 +8,8 @@ type Props = {
 export const ListItem = ({ item }: Props) => {
     return (
         <Component.Container>
-            {item.name}
+            <input type="checkbox" />
+            <label>{item.name}</label>
         </Component.Container>
     );
 }
